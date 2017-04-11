@@ -2,7 +2,8 @@
   <div class="container">
     <div class="footer">
       <div class="split-line">
-        <span class="line"></span><span class="dot"></span>
+        <span class="line"></span>
+        <span class="dot"></span>
         <span class="line"></span>
       </div>
       <div class="copy-right">
@@ -23,22 +24,21 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
+@import "../vars.less";
 .footer{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.footer.link{
-  // margin-top: 50px;
+.footer .link{
   color:#808080;
   font-size:13px;
   font-weight: 100;
   height:20px;
   text-align: center;
-
 }
-.footer.link .linkItem{
+.footer .link .linkItem{
   padding:0 10px;
   border-right: 1px solid #cbcbcb;
   &:last-child{

@@ -35,16 +35,4 @@ export default {
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
-.logo{
-  width: 103px;
-  float:left;
-}
-
-.center{
-  padding: 13px 0px;
-}
-
-@media screen and (min-width: 769px) {
-    .logo { width: 140px }
-}
 </style>

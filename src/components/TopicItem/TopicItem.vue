@@ -26,13 +26,11 @@
           {{beautySummary(summary)}}
         </div>
       </div>
+    </div>]
+    <div class="content" v-show="isOpen">
+      <article-pad :articleArray="newsArray" :articleType="ARTICLE_TYPES.NEWS" />
+      <article-pad :articleArray="weiboArray" :articleType="ARTICLE_TYPES.WEIBO" />
     </div>
-    <collapse-transition>
-      <div class="content" v-show="isOpen">
-        <article-pad :articleArray="newsArray" :articleType="ARTICLE_TYPES.NEWS" />
-        <article-pad :articleArray="weiboArray" :articleType="ARTICLE_TYPES.WEIBO" />
-      </div>
-    </collapse-transition>
     <div :style="{ clear: 'both' }" />
   </div>
 </template>
@@ -43,7 +41,7 @@ import articlePad from './articlePad'
 import logic from './logic'
 import {typeset, beautySummary, splitTitle} from '../../utils/format'
 
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition'
+// import CollapseTransition from 'element-ui/src/transitions/collapse-transition'
 
 const TOP_TEXT = '置顶'
 
@@ -111,7 +109,7 @@ export default {
     },
     beautySummary
   },
-  components: { articlePad, CollapseTransition }
+  components: { articlePad }
 }
 </script>
 
