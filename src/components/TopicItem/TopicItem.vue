@@ -26,7 +26,7 @@
           {{beautySummary(summary)}}
         </div>
       </div>
-    </div>]
+    </div>
     <div class="content" v-show="isOpen">
       <article-pad :articleArray="newsArray" :articleType="ARTICLE_TYPES.NEWS" />
       <article-pad :articleArray="weiboArray" :articleType="ARTICLE_TYPES.WEIBO" />
